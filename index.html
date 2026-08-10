@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About | Portofolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <title>Ghazali | Portofolio</title>
+    
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head> 
+
 <body>
-
-  <header>
-    <nav>
-      <a href="index.html" class="logo">PORTOFOLIO</a>
-      <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="project.html">Project</a></li>
-      <li><a href="experience.html">Experience</a></li>
-      <li><a href="certificates.html">Certificates</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <h1>About</h1>
-  </main>
-
-  <footer>
-    &copy; 2026 — Dibuat sebagai fondasi belajar web development
-  </footer>
-
+    
+    <header class="navbar">
+        <a href="#home" class="nav-logo" data-section="home">
+            Ghazali
+        </a>
+        <nav class="nav-links">
+            <a href="#home">
+                Home
+            </a>
+            <a href="#about">
+                About
+            </a>
+            <a href="#portofolio">
+                Portofolio
+            </a>
+            <a href="#contact">
+                Contact
+            </a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="switch to light mode" aria-pressed="false">
+            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="4.2"/>
+                <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 
+                5.9l1.7-1.7" stroke-linecap="round" />
+            </svg>
+        </button>
+    </header>
+    
 </body>
 </html>
