@@ -31,13 +31,133 @@
             </a>
         </nav>
         <button class="theme-toggle" id="themeToggle" aria-label="switch to light mode" aria-pressed="false">
-            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="red" stroke="currentColor" stroke-width="1.6">
                 <circle cx="12" cy="12" r="4.2"/>
                 <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 
-                5.9l1.7-1.7" stroke-linecap="round" />
+                5.9l1.7-1.7" stroke-linecap="round"/>
+            </svg>
+            <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 1 0.5 10.5z" stroke-linejoin="round"/>
             </svg>
         </button>
     </header>
+
+    <main>
+
+        <section id="home" class="section home-section">
+            <div class="home-content">
+                <p class="eyebrow reveal">
+                    Professional website developer
+                </p>
+                <h1 class="reveal">
+                    GHAZALI
+                </h1>
+                <h2 class="reveal">
+                    <span id="typing"></span>
+                </h2>
+                <p class="home-description reveal">
+                    I build websites for you.
+                </p>
+                <a 
+                href="#portofolio"
+                class="home-button reveal"
+                data-section="portofolio"
+                >
+                <span>Explore My Work</span>
+                <span class="home-button-arrow">→</span>
+                </a>
+            </div>
+            <div class="home-scroll">
+                Scroll to learn more about your web developer
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-header title-reveal">
+                <span>02</span>
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="about-main reveal">
+                <p class="about-intro">
+                    I'm a UI/UX Designer & Website Developer. I design interfaces and build websites that are 
+                    not just nice to look at, they are made to be used.
+                </p>
+                <p>
+                    Wheter you already have a full concept or you are still figuring things out, 
+                    that is totally fine!
+                </p>
+                <p>
+                    I will help turn it into a website you are proud to share
+                </p>
+                <p>
+                    Ready to build?
+                </p>
+            </div>
+            <div class="about-info reveal">
+                <div>
+                    <span>FIELD</span>
+                    <strong>Software</strong>
+                </div>
+                <div>
+                    <span>FOCUS</span>
+                    <strong>Building Systems</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="portofolio" class="section portofolio-section">
+            <div class="section-header tittle-reveal">
+                <span>03</span>
+                <h2>PORTOFOLIO</h2>
+            </div>
+            <div class="portofolio-buttons reveal">
+                <button
+                    class="portofolio-button" active
+                    data-content="projects">
+                    <span>01</span>
+                    Projects
+                </button>
+                <button
+                    class="portofolio-button"
+                    data-content="skills">
+                    <span>02</span>
+                    Certificates
+                </button>
+            </div>
+            <div 
+                class="portofolio-content"
+                id="projects">
+                <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/project-1.jpg" alt="no images available">
+                        </div>
+                        <div class="project-number">
+                            01
+                        </div>
+                        <h4>
+                            Intelligent Recomendation System
+                        </h4>
+                        <p>
+                            A contextaware recomendation system designed to 
+                            recommend places based on user preferences
+                        </p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>ML</span>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="images/project-2.jpg" alt="no images available">
+                        </div>
+                    </article>
+                </div>
+            </div> 
+        </section>
+
+    </main>
     
 </body>
 </html>
