@@ -1,3 +1,39 @@
-.navbar {
+:root {
+
+    --bg: #080808;
+    --ink: #ffffff;
+ 
+    --grey-1: #777;
+    --grey-2: #666;
+    --grey-3: #555;
+    --grey-4: #444;
+    --grey-5: #333;
+ 
+    --line: #222;
+    --line-soft: #1b1b1b;
+ 
+    --panel: #111;
+    --card: #0c0c0c;
+ 
+    --radius: 3px;
     
+}
+
+[data-theme="light"] {
+ 
+    --bg: #f7f6f3;
+    --ink: #101010;
+ 
+    --grey-1: #6b6b6b;
+    --grey-2: #7d7d7d;
+    --grey-3: #8f8f8f;
+    --grey-4: #a3a19b;
+    --grey-5: #c7c4bc;
+ 
+    --line: #e3e0d8;
+    --line-soft: #ece9e1;
+ 
+    --panel: #ffffff;
+    --card: #ffffff;
+ 
 }
