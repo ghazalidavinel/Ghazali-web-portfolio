@@ -1,245 +1,507 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light" />
-    <title>Ghazali | Portofolio</title>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+
+    <title>Davin | Portfolio</title>
+
+    <!--
+        script.js is loaded here (in <head>,
+        not deferred) so its theme-detection
+        code at the top of the file runs before
+        the page paints — no flash of the wrong
+        theme. Everything else in that file is
+        wrapped in a DOMContentLoaded listener,
+        so it still waits safely for the page's
+        elements to exist.
+    -->
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
     <header class="navbar">
-      <a href="#home" class="nav-logo" data-section="home"> Ghazali </a>
-      <nav class="nav-links">
-        <a href="#home"> Home </a>
-        <a href="#about"> About </a>
-        <a href="#portofolio"> Portofolio </a>
-        <a href="#contact"> Contact </a>
-      </nav>
-      <button
-        class="theme-toggle"
-        id="themeToggle"
-        aria-label="switch to light mode"
-        aria-pressed="false"
-      >
-        <svg
-          class="icon icon-sun"
-          viewBox="0 0 24 24"
-          fill="red"
-          stroke="currentColor"
-          stroke-width="1.6"
-        >
-          <circle cx="12" cy="12" r="4.2" />
-          <path
-            d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 
-                5.9l1.7-1.7"
-            stroke-linecap="round"
-          />
-        </svg>
-        <svg
-          class="icon icon-moon"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="1.6"
-        >
-          <path
-            d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 1 0.5 10.5z"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
+
+        <a href="#home" class="nav-logo" data-section="home">
+            DAVIN
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home" data-section="home">
+                Home
+            </a>
+
+            <a href="#about" data-section="about">
+                About
+            </a>
+
+            <a href="#portfolio" data-section="portfolio">
+                Portfolio
+            </a>
+
+            <a href="#contact" data-section="contact">
+                Contact
+            </a>
+
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to light mode" aria-pressed="false">
+            <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="4.2" />
+                <path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke-linecap="round" />
+            </svg>
+            <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.6 6.6 0 0 0 10.5 10.5Z" stroke-linejoin="round" />
+            </svg>
+        </button>
+
     </header>
 
+
     <main>
-      <section id="home" class="section home-section">
-        <div class="home-content">
-          <p class="eyebrow reveal">Professional website developer</p>
-          <h1 class="reveal">GHAZALI</h1>
-          <h2 class="reveal">
-            <span id="typing"></span>
-          </h2>
-          <p class="home-description reveal">I build websites for you.</p>
-          <a
-            href="#portofolio"
-            class="home-button reveal"
-            data-section="portofolio"
-          >
-            <span>Explore My Work</span>
-            <span class="home-button-arrow">→</span>
-          </a>
-        </div>
-        <div class="home-scroll">
-          Scroll to learn more about your web developer
-        </div>
-      </section>
 
-      <section id="about" class="section about-section">
-        <div class="section-header title-reveal">
-          <span>02</span>
-          <h2>ABOUT ME</h2>
-        </div>
-        <div class="about-main reveal">
-          <p class="about-intro">
-            I'm a UI/UX Designer & Website Developer. I design interfaces and
-            build websites that are not just nice to look at, they are made to
-            be used.
-          </p>
-          <p>
-            Wheter you already have a full concept or you are still figuring
-            things out, that is totally fine!
-          </p>
-          <p>I will help turn it into a website you are proud to share</p>
-          <p>Ready to build?</p>
-        </div>
-        <div class="about-info reveal">
-          <div>
-            <span>FIELD</span>
-            <strong>Software</strong>
-          </div>
-          <div>
-            <span>FOCUS</span>
-            <strong>Building Systems</strong>
-          </div>
-        </div>
-      </section>
+        <!-- =========================
+             HOME
+        ========================== -->
 
-      <section id="portofolio" class="section portofolio-section">
-        <div class="section-header tittle-reveal">
-          <span>03</span>
-          <h2>PORTOFOLIO</h2>
-        </div>
-        <div class="portofolio-buttons reveal">
-          <button class="portofolio-button" active data-content="projects">
-            <span>01</span>
-            Projects
-          </button>
-          <button class="portofolio-button" data-content="skills">
-            <span>02</span>
-            Certificates
-          </button>
-        </div>
-        <div class="portofolio-content" id="projects">
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-image">
-                <img src="images/project-1.jpg" alt="no images available" />
-              </div>
-              <div class="project-number">01</div>
-              <h4>Intelligent Recomendation System</h4>
-              <p>
-                A contextaware recomendation system designed to recommend places
-                based on user preferences
-              </p>
-              <div class="tags">
-                <span>Python</span>
-                <span>AI</span>
-                <span>ML</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <div class="project-image">
-                <img src="images/project-2.jpg" alt="no images available" />
-              </div>
-              <div class="project-number">02</div>
-              <h4>Chilcha</h4>
-              <p>
-                A social travel application designed to help users discover
-                places and create personalized experiences.
-              </p>
-              <div class="tags">
-                <span>Swift</span>
-                <span>SwiftUI</span>
-                <span>iOS</span>
-              </div>
-            </article>
-            <article class="projext-card">
-              <div class="project-image">
-                <img src="images/project-3.jpg" alt="no images available" />
-              </div>
-              <div class="project number">03</div>
-              <h4>Portofolio website</h4>
-              <p>
-                A modern interactive portofolio website built using HTML, CSS
-                and JavaScript.
-              </p>
-              <div class="tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="portofolio-content" id="certificates">
-          <div class="certificate-grid">
-            <div class="certificate-card">
-              <div class="certificate-image">
-                <img src="image/certificate-1.jpg" alt="Certificate Name" />
-              </div>
-              <span>01</span>
-              <h4>Certificate Name</h4>
-              <p>Issuing Organization</p>
-              <small> 2026 </small>
+        <section id="home" class="section home-section">
+
+            <div class="home-content">
+
+                <p class="eyebrow reveal">
+                    INFORMATION TECHNOLOGY
+                </p>
+
+                <h1 class="reveal">
+                    DAVIN
+                </h1>
+
+                <h2 class="reveal">
+                    <span id="typing"></span>
+                </h2>
+
+                <p class="home-description reveal">
+                    I build intelligent systems, software applications,
+                    and interactive digital experiences.
+                </p>
+
+                <a
+                    href="#portfolio"
+                    class="home-button reveal"
+                    data-section="portfolio"
+                >
+                    <span>Explore My Work</span>
+                    <span class="home-button-arrow">→</span>
+                </a>
+
             </div>
-            <div class="certificate-card">
-              <div class="certificate-image">
-                <img src="images/certificate-2.jpg" alt="no images available" />
-              </div>
-              <span> 02 </span>
-              <h2>Certificate name</h2>
-              <p>Issuing Organization</p>
-              <small> 2026 </small>
+
+            <div class="home-scroll">
+                SCROLL TO EXPLORE
             </div>
-          </div>
-        </div>
-        <div class="portofolio-content" id="skills">
-          <div class="skills-grid">
-            <div class="skills">HTML</div>
-            <div class="skills">CSS</div>
-            <div class="skills">JavaScript</div>
-            <div class="skills">Python</div>
-            <div class="skills">Java</div>
-            <div class="skills">Swift</div>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="section contact-section">
-        <div class="contact-content">
-          <p class="eyebrow reveal">Got something in mind?</p>
-          <h2 class="title-reveal">
-            Let's talk, explore your <span>ideas</span>, and see where it takes
-            us!
-          </h2>
-          <button class="contact-button reveal" id="contactButton">
-            GET IN TOUCH →
-          </button>
-          <div class="social-links" id="socialLinks">
-            <a href="https:wa.me/60123608339">
-              <span>01</span>
-              Whatsapp
-            </a>
-            <a href="https://instagram.com/davelgha" target="_blank">
-              <span>02</span>
-              Insagram
-            </a>
-            <a href="https://linkedin.com/davinelghazali" target="_blank">
-              <span>03</span>
-              Linkedin
-            </a>
-            <a href="https://github.com/ghazalidavinel" target="_blank">
-              <span>04</span>
-              GitHub
-            </a>
-          </div>
-        </div>
-      </section>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section id="about" class="section about-section">
+
+            <div class="section-header title-reveal">
+
+                <span>02</span>
+
+                <h2>ABOUT</h2>
+
+            </div>
+
+
+            <div class="about-layout">
+
+                <div class="about-main reveal">
+
+                    <p class="about-intro">
+                        I'm an Information Technology student
+                        passionate about building technology
+                        that solves real problems.
+                    </p>
+
+                    <p>
+                        My interests include artificial intelligence,
+                        software engineering, application development,
+                        and emerging technologies.
+                    </p>
+
+                    <p>
+                        I enjoy transforming ideas into functional
+                        products while continuously improving my
+                        technical skills.
+                    </p>
+
+                </div>
+
+
+                <div class="about-info reveal">
+
+                    <div>
+                        <span>FIELD</span>
+                        <strong>Information Technology</strong>
+                    </div>
+
+                    <div>
+                        <span>INTEREST</span>
+                        <strong>AI / Software</strong>
+                    </div>
+
+                    <div>
+                        <span>FOCUS</span>
+                        <strong>Building Systems</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PORTFOLIO
+        ========================== -->
+
+        <section id="portfolio" class="section portfolio-section">
+
+            <div class="section-header title-reveal">
+
+                <span>03</span>
+
+                <h2>PORTFOLIO</h2>
+
+            </div>
+
+
+            <!-- PORTFOLIO BUTTONS -->
+
+            <div class="portfolio-buttons reveal">
+
+                <button
+                    class="portfolio-button active"
+                    data-content="projects"
+                >
+                    <span>01</span>
+                    Projects
+                </button>
+
+                <button
+                    class="portfolio-button"
+                    data-content="certificates"
+                >
+                    <span>02</span>
+                    Certificates
+                </button>
+
+                <button
+                    class="portfolio-button"
+                    data-content="skills"
+                >
+                    <span>03</span>
+                    Skills
+                </button>
+
+            </div>
+
+
+            <!-- PROJECTS -->
+
+            <div
+                class="portfolio-content active"
+                id="projects"
+            >
+
+                <div class="project-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/project-1.jpg" alt="Intelligent Recommendation System">
+                        </div>
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h4>
+                            Intelligent Recommendation System
+                        </h4>
+
+                        <p>
+                            A context-aware recommendation system
+                            designed to recommend places based on
+                            user preferences.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>ML</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/project-2.jpg" alt="Chilcha">
+                        </div>
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h4>
+                            Chilcha
+                        </h4>
+
+                        <p>
+                            A social travel application designed
+                            to help users discover places and create
+                            personalized experiences.
+                        </p>
+
+                        <div class="tags">
+                            <span>Swift</span>
+                            <span>SwiftUI</span>
+                            <span>iOS</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image">
+                            <img src="images/project-3.jpg" alt="Portfolio Website">
+                        </div>
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <h4>
+                            Portfolio Website
+                        </h4>
+
+                        <p>
+                            A modern interactive portfolio website
+                            built using HTML, CSS and JavaScript.
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!-- CERTIFICATES -->
+
+            <div
+                class="portfolio-content"
+                id="certificates"
+            >
+
+                <div class="certificate-grid">
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-image">
+                            <img src="images/certificate-1.jpg" alt="Certificate Name">
+                        </div>
+
+                        <span>01</span>
+
+                        <h4>
+                            Certificate Name
+                        </h4>
+
+                        <p>
+                            Issuing Organization
+                        </p>
+
+                        <small>
+                            2026
+                        </small>
+
+                    </div>
+
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-image">
+                            <img src="images/certificate-2.jpg" alt="Certificate Name">
+                        </div>
+
+                        <span>02</span>
+
+                        <h4>
+                            Certificate Name
+                        </h4>
+
+                        <p>
+                            Issuing Organization
+                        </p>
+
+                        <small>
+                            2026
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SKILLS -->
+
+            <div
+                class="portfolio-content"
+                id="skills"
+            >
+
+                <div class="skills-grid">
+
+                    <div class="skill">
+                        HTML
+                    </div>
+
+                    <div class="skill">
+                        CSS
+                    </div>
+
+                    <div class="skill">
+                        JavaScript
+                    </div>
+
+                    <div class="skill">
+                        Python
+                    </div>
+
+                    <div class="skill">
+                        Java
+                    </div>
+
+                    <div class="skill">
+                        Swift
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="contact-content">
+
+                <p class="eyebrow reveal">
+                    HAVE A PROJECT IN MIND?
+                </p>
+
+                <h2 class="title-reveal">
+                    LET'S BUILD
+                    <span>SOMETHING.</span>
+                </h2>
+
+
+                <!-- CONTACT BUTTON -->
+
+                <button
+                    class="contact-button reveal"
+                    id="contactButton"
+                >
+                    GET IN TOUCH →
+                </button>
+
+
+                <!-- SOCIAL LINKS -->
+
+                <div
+                    class="social-links"
+                    id="socialLinks"
+                >
+
+                    <a
+                        href="https://wa.me/60123456789"
+                        target="_blank"
+                    >
+                        <span>01</span>
+                        WhatsApp
+                    </a>
+
+                    <a
+                        href="https://instagram.com/yourusername"
+                        target="_blank"
+                    >
+                        <span>02</span>
+                        Instagram
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/yourusername"
+                        target="_blank"
+                    >
+                        <span>03</span>
+                        LinkedIn
+                    </a>
+
+                    <a
+                        href="https://github.com/yourusername"
+                        target="_blank"
+                    >
+                        <span>04</span>
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
+
+
     <footer>
-      <p>© 2026 Davin</p>
+
+        <p>
+            © 2026 Davin
+        </p>
+
     </footer>
-  </body>
+
+</body>
+
 </html>
