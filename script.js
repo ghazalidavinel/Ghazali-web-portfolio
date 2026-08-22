@@ -275,9 +275,8 @@ document.addEventListener(
 
 
         const words = [
-            "AI ENGINEER",
-            "SOFTWARE DEVELOPER",
-            "TECH ENTHUSIAST"
+            "Web Developer",
+            "UI/UX Designer"
         ];
 
 
