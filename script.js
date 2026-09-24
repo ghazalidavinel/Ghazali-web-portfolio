@@ -243,23 +243,6 @@ document.addEventListener(
                     "active"
                 );
 
-
-                if (
-                    socialLinks.classList.contains(
-                        "active"
-                    )
-                ) {
-
-                    contactButton.textContent =
-                        "CLOSE CONTACT ↑";
-
-                } else {
-
-                    contactButton.textContent =
-                        "GET IN TOUCH →";
-
-                }
-
             }
         );
 
@@ -275,7 +258,7 @@ document.addEventListener(
 
 
         const words = [
-            "Web Developer",
+            "Web App Developer",
             "UI/UX Designer"
         ];
 
