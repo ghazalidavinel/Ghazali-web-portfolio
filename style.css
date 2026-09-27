@@ -282,6 +282,8 @@ body {
 
     min-height: 100vh;
 
+    min-height: 100svh;
+
     padding:
         160px 7%
         120px;
@@ -589,7 +591,12 @@ body {
 .about-main
 .about-intro {
 
-    font-size: 35px;
+    font-size:
+        clamp(
+            22px,
+            4vw,
+            35px
+        );
 
     color: var(--ink);
 
@@ -844,7 +851,12 @@ body {
 
 .project-card h4 {
 
-    font-size: 26px;
+    font-size:
+        clamp(
+            20px,
+            4.5vw,
+            26px
+        );
 
     line-height: 1.1;
 
@@ -1278,6 +1290,22 @@ footer {
 
     }
 
+    .about-info {
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+
+        gap: 30px 40px;
+
+    }
+
+    .about-info div {
+
+        flex: 1 1 200px;
+
+    }
+
     .portfolio-buttons {
 
         gap: 24px;
@@ -1312,6 +1340,13 @@ footer {
         margin-left: 0;
 
         overflow-x: auto;
+
+        mask-image:
+            linear-gradient(
+                to right,
+                black calc(100% - 24px),
+                transparent 100%
+            );
 
     }
 
@@ -1381,6 +1416,79 @@ footer {
         gap: 18px;
 
         overflow-x: auto;
+
+    }
+
+    .skills-groups {
+
+        gap: 35px;
+
+    }
+
+    .skill {
+
+        padding: 11px 20px;
+
+        font-size: 13px;
+
+    }
+
+    .contact-content h2 {
+
+        letter-spacing: -3px;
+
+    }
+
+    .home-tagline {
+
+        font-size:
+            clamp(
+                18px,
+                5.5vw,
+                26px
+            );
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .home-content h1 {
+
+        letter-spacing: -3px;
+
+    }
+
+    .section-header h2 {
+
+        letter-spacing: -2px;
+
+    }
+
+    .contact-content h2 {
+
+        letter-spacing: -2px;
+
+    }
+
+    .section {
+
+        padding:
+            110px 18px
+            90px;
+
+    }
+
+    .nav-links {
+
+        gap: 14px;
+
+    }
+
+    .nav-links a {
+
+        font-size: 11px;
 
     }
 
