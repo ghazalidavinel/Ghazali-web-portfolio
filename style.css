@@ -452,25 +452,22 @@ body {
 
 .home-content h2 {
 
-    margin-top: 35px;
+    margin-bottom: 18px;
 
     font-size:
         clamp(
-            25px,
-            4vw,
-            50px
+            13px,
+            1.4vw,
+            16px
         );
 
-    color: var(--grey-1);
-}
+    letter-spacing: 5px;
 
+    text-transform: uppercase;
 
-#typing {
+    font-weight: normal;
 
-    border-right:
-        2px solid var(--ink);
-
-    padding-right: 6px;
+    color: var(--grey-2);
 }
 
 
